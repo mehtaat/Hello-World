@@ -49,6 +49,10 @@ jobs:
       - attach_workspace:
           at: ~/
       - run: cat ~/output.txt
+      - run: return 1
+      - run:
+          command: echo "Error!"
+          when: on_fail
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
