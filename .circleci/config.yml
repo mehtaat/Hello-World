@@ -4,7 +4,7 @@ version: 2.1
 
 commands:
   print_pipeline_id:
-    desription: "Print Pipeline Id"
+    description: "Print Pipeline Id"
     parameters: 
       to: 
         type: string
